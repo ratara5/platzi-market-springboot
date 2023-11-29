@@ -19,9 +19,9 @@ public class ComprasProducto {
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
-    @ManyToOne
+/*    @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
-    private Producto producto;
+    private Producto producto;*/
 
 
     public ComprasProductoPK getId() {
@@ -64,11 +64,11 @@ public class ComprasProducto {
         this.compra = compra;
     }
 
-    public Producto getProducto() {
+/*    public Producto getProducto() {
         return producto;
     }
 
     public void setProducto(Producto producto) {
         this.producto = producto;
-    }
+    }*/
 }
